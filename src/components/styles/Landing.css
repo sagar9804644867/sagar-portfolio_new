@@ -395,16 +395,4 @@ h2.landing-info-h2 {
     font-size: 75px;
   }
 }
-/* Cover Akash Malhotra text baked into 3D model */
-.character-name-cover {
-  position: absolute;
-  bottom: 28%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 340px;
-  height: 90px;
-  background-color: var(--backgroundColor);
-  z-index: 10;
-  pointer-events: none;
-  border-radius: 4px;
-}
+

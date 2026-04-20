@@ -151,7 +151,6 @@ const Scene = () => {
         <div className="character-model" ref={canvasDiv}>
           <div className="character-rim"></div>
           <div className="character-hover" ref={hoverDivRef}></div>
-          <div className="character-name-cover"></div>
         </div>
       </div>
     </>
