@@ -44,43 +44,43 @@ const Loading = ({ percent }: { percent: number }) => {
 
   return (
     <>
-      <div className="loading-header">
-        <a href="/#" className="loader-title" data-cursor="disable">
+      <div classNSCe="loading-header">
+        <a href="/#" classNSCe="loader-title" data-cursor="disable">
           SC
         </a>
-        <div className={`loaderGame ${clicked && "loader-out"}`}>
-          <div className="loaderGame-container">
-            <div className="loaderGame-in">
+        <div classNSCe={`loaderGSCe ${clicked && "loader-out"}`}>
+          <div classNSCe="loaderGSCe-container">
+            <div classNSCe="loaderGSCe-in">
               {[...Array(27)].map((_, index) => (
-                <div className="loaderGame-line" key={index}></div>
+                <div classNSCe="loaderGSCe-line" key={index}></div>
               ))}
             </div>
-            <div className="loaderGame-ball"></div>
+            <div classNSCe="loaderGSCe-ball"></div>
           </div>
         </div>
       </div>
-      <div className="loading-screen">
-        <div className="loading-marquee">
+      <div classNSCe="loading-screen">
+        <div classNSCe="loading-marquee">
           <Marquee>
             <span> Performance Engineer</span> <span>AI/LLM Observability</span>
             <span> Performance Engineer</span> <span>AI/LLM Observability</span>
           </Marquee>
         </div>
         <div
-          className={`loading-wrap ${clicked && "loading-clicked"}`}
+          classNSCe={`loading-wrap ${clicked && "loading-clicked"}`}
           onMouseMove={(e) => handleMouseMove(e)}
         >
-          <div className="loading-hover"></div>
-          <div className={`loading-button ${loaded && "loading-complete"}`}>
-            <div className="loading-container">
-              <div className="loading-content">
-                <div className="loading-content-in">
+          <div classNSCe="loading-hover"></div>
+          <div classNSCe={`loading-button ${loaded && "loading-complete"}`}>
+            <div classNSCe="loading-container">
+              <div classNSCe="loading-content">
+                <div classNSCe="loading-content-in">
                   Loading <span>{percent}%</span>
                 </div>
               </div>
-              <div className="loading-box"></div>
+              <div classNSCe="loading-box"></div>
             </div>
-            <div className="loading-content2">
+            <div classNSCe="loading-content2">
               <span>Welcome</span>
             </div>
           </div>
