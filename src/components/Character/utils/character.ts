@@ -31,6 +31,7 @@ const setCharacter = (
             character.traverse((child: any) => {
               if (child.isMesh) {
                 const mesh = child as THREE.Mesh;
+                console.log("Mesh name:", mesh.name); // Log all mesh names
 
                 // Change clothing colors to match site theme
                 if (mesh.material) {
@@ -42,6 +43,12 @@ const setCharacter = (
                     const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
                     newMat.color = new THREE.Color("#000000");
                     mesh.material = newMat;
+                  }
+
+                  // Hide the laptop screen that shows Akash Malhotra name
+                  const screenNames = ["screen", "Screen", "monitor", "Monitor", "laptop", "Laptop", "display", "Display", "SCREEN", "MONITOR"];
+                  if (screenNames.some(n => mesh.name.toLowerCase().includes(n.toLowerCase()))) {
+                    mesh.visible = false;
                   }
                 }
 
